@@ -7,117 +7,303 @@
     <title>Tendercom</title>
 </head>
 <body>
-    <div class="bg-[#ECECF4] text-zinc-900 min-h-screen overflow-x-hidden">
+    <div class="bg-[#ECECF4] dark:bg-zinc-900 dark:text-white text-zinc-900 min-h-screen overflow-x-hidden">
         <div class="container mx-auto px-4">
             <!-- Main -->
-             <div class="pt-6 relative flex gap-4">
+             <div class="pt-6 relative flex flex-col md:flex-row gap-4">
                 <!-- Left -->
-                <div class="flex-1">
-                    <header class="flex gap-2 items-center">
-                        <button class="uppercase border border-zinc-900 py-2 px-4 rounded-2xl">Тарифы</button>
-                        <button class="uppercase border border-zinc-900 py-2 px-4 rounded-2xl">Тарифы</button>
-                        <button class="uppercase border border-zinc-900 py-2 px-4 rounded-2xl">Тарифы</button>
+                <div class="md:flex-1">
+                    <header class="hidden md:flex gap-2 items-center">
+                        <button class="header-button">Тарифы</button>
+                        <button class="header-button">Тарифы</button>
+                        <button class="header-button">Тарифы</button>
                     </header>
-                    <h1 class="my-5 font-medium text-[190px] flex flex-col">
+                    <h1 class="my-5 font-medium lg:text-[180px] sm:text-[150px] text-[100px] flex flex-col">
                         <span class="-my-3 leading-none">TEN</span>
                         <span class="-my-3 leading-none">DER</span>
                         <span class="-my-3 leading-none">COM</span>
                     </h1>
                 </div>
                  <!-- Right -->
-                <div class="flex-1 relative h-[730px]">
+                <div class="main-image">
                     <img class="absolute top-0 left-0 h-full max-w-none" src="./src/assets/laptop-img.png" alt="">
                 </div>
-                <button class="absolute bottom-0 left-0 bg-[#FF2D3D] rounded-xl py-2 px-24 text-sm font-semibold text-white">Buy plan</button>
+                <button class="buy-button">Buy plan</button>
              </div>
-            
-             <!-- price -->
+            <!-- Второй блок-->
+            <div class="flex flex-col items-center text-center my-32">
+                <span class="font-medium text-superRed">Deploy faster</span>
+                <h2 class="mt-3 mb-6 font-semibold text-5xl">Everything you need to deploy your app</h2>
+                <p class="text-lg text-superGray w-3/6">Quis tellus eget adipiscing convallis sit sit eget aliquet quis. Suspendisse eget egestas a elementum pulvinar et feugiat blandit at. In mi viverra elit nunc.</p>
+            </div>
+            <!-- Три столбца с информацией-->
+            <div class="flex gap-6 my-16">
+                <div class="mx-6">
+                    <h4 class="font-semibold text-lg before:content-[url(/src/assets/cloud-img.svg)] before:mr-2">Push to deploy</h4>
+                    <p class="text-lg text-superGray w-lg mt-4 mb-6">Commodo nec sagittis tortor mauris sed. Turpis tortor quis scelerisque diam id accumsan nullam tempus. Pulvinar etiam lacus volutpat eu. Phasellus praesent ligula sit faucibus.</p>
+                   <div class="font-medium text-lg flex items-center gap-2">
+                        <span class= "text-superRed">Learn more</span>
+                        <img src="/src/assets/arrow-small-right-img.svg" alt="" class="">
+                    </div>
+                </div>
+                <div class="">
+                    <h4 class="font-semibold text-lg before:content-[url(/src/assets/lock-closed-img.svg)] before:mr-2">SSL certificates</h4>
+                    <p class="text-lg text-superGray w-lg mt-4 mb-6">Pellentesque sit elit congue ante nec amet. Dolor aenean curabitur viverra suspendisse iaculis eget. Nec mollis placerat ultricies euismod ut condimentum.</p>
+                    <div class="font-medium text-lg flex items-center gap-2">
+                        <span class= "text-superRed">Learn more</span>
+                        <img src="/src/assets/arrow-small-right-img.svg" alt="" class="">
+                    </div>
+                </div>
+                <div class="">
+                    <h4 class="font-semibold text-lg before:content-[url(/src/assets/arrow-path-img.svg)] before:mr-2">Simple queues</h4>
+                    <p class="text-lg text-superGray w-lg mt-4 mb-6">Commodo nec sagittis tortor mauris sed. Turpis tortor quis scelerisque diam id accumsan nullam tempus. Pulvinar etiam lacus volutpat eu. Phasellus praesent ligula sit faucibus.</p>
+                    <div class="font-medium text-lg flex items-center gap-2">
+                        <span class= "text-superRed">Learn more</span>
+                        <img src="/src/assets/arrow-small-right-img.svg" alt="" class="">
+                    </div>
+                </div>
+            </div>
+            <!-- price -->
             <div class="my-32">
                 <!-- Heading -->
                 <div class="flex flex-col items-center text-center">
-                    <span class="font-medium text-[#FF2D3D]">Pricing</span>
+                    <span class="font-medium text-superRed">Pricing</span>
                     <h2 class="mt-3 mb-6 font-bold text-5xl">Pricing plans for teams of all sizes</h2>
-                    <p class="text-lg text-[#96999D] w-9/12">Choose an affordable plan that’s packed with the best features for engaging your audience, creating customer loyalty, and driving sales.</p>
+                    <p class="text-lg text-superGray w-9/12">Choose an affordable plan that’s packed with the best features for engaging your audience, creating customer loyalty, and driving sales.</p>
                 </div>
                 <!-- Карточки -->
                 <div class="flex flex-col items-center my-16">
                     <div class="rounded-full p-1 border border-zinc-900">
-                        <button class="bg-[#FF2D3D] rounded-full text-sm font-semibold py-1 px-3">Monthly</button>
-                        <button class="rounded-full text-sm font-semibold opacity-60 py-1 px-3 hover:bg-[#FF2D3D]">Annually</button>
+                        <button class="bg-superRed rounded-full text-sm font-semibold py-1 px-3">Monthly</button>
+                        <button class="rounded-full text-sm font-semibold opacity-60 py-1 px-3 hover:bg-superRed">Annually</button>
                     </div>
-                    <div class="flex gap-6 my-4">
+                    <div class="flex flex-col lg:flex-row gap-6 my-4">
                         <!-- Карточка -->
-                        <div class="border border-zinc-900 py-6 px-8 rounded-2xl min-w-[320px] hover:border-[#FF2D3D]">
-                            <h4 class="font-semibold text-lg hover:text-[#FF2D3D]">Freelancer</h4>
-                            <p class="text-sm text-[#96999D]">The essentials to provide your best work for clients.</p>
+                        <div class="border dark:border-white border-zinc-900 py-6 px-8 rounded-2xl min-w-[320px] hover:border-superRed">
+                            <h4 class="font-semibold text-lg hover:text-superRed">Freelancer</h4>
+                            <p class="text-sm text-superGray">The essentials to provide your best work for clients.</p>
                             <div class="my-3 flex justify-between items-center">
                                 <div class="">
                                     <span class="font-bold text-4xl">$15</span>
-                                    <span class="text-sm text-[#96999D]">/month</span>
+                                    <span class="text-sm text-superGray">/month</span>
                                 </div>
                             </div>
                             <div class="">
                                 <div class="">
                                     <span class="font-bold text-4xl">$144</span>
-                                    <span class="text-sm text-[#96999D]">/year</span>
+                                    <span class="text-sm text-superGray">/year</span>
                                 </div>
                             </div>
-                            <button class="my-4 border border-[#FF2D3D] text-[#FF2D3D] py-2 px-6 w-full rounded-xl hover:bg-[#FF2D3D] hover:text-white">Buy plan</button>
-                            <ul class="text-[#96999D] my-4">
-                                <li class="before:content-[url(/src/assets/vector-img.svg)] before:mr-2 my-2">5 products</li>
-                                <li class="before:content-[url(/src/assets/vector-img.svg)] before:mr-2 my-2">Up to 1,000 subscribers</li>
-                                <li class="before:content-[url(/src/assets/vector-img.svg)] before:mr-2 my-2">Basic analytics</li>
-                                <li class="before:content-[url(/src/assets/vector-img.svg)] before:mr-2 my-2">48-hour support response time</li>
+                            <button class="my-4 border border-superRed text-superRed py-2 px-6 w-full rounded-xl hover:bg-[#superRed] hover:text-white">Buy plan</button>
+                            <ul class="text-superGray my-4">
+                                <li class="card-list-item">5 products</li>
+                                <li class="card-list-item">Up to 1,000 subscribers</li>
+                                <li class="card-list-item">Basic analytics</li>
+                                <li class="card-list-item">48-hour support response time</li>
                             </ul>
                         </div>
-                        <div class="border border-zinc-900 py-6 px-8 rounded-2xl min-w-[320px] hover:border-[#FF2D3D]">
-                            <h4 class="font-semibold text-lg hover:text-[#FF2D3D]">Startup</h4>
-                            <p class="text-sm text-[#96999D]">The essentials to provide your best work for clients.</p>
+                        <div class="border dark:border-white border-zinc-900 py-6 px-8 rounded-2xl min-w-[320px] hover:border-superRed">
+                            <h4 class="font-semibold text-lg hover:text-superRed">Startup</h4>
+                            <p class="text-sm text-superGray">The essentials to provide your best work for clients.</p>
                             <div class="my-3 flex justify-between items-center">
                                 <div class="">
                                     <span class="font-bold text-4xl">$30</span>
-                                    <span class="text-sm text-[#96999D]">/month</span>
+                                    <span class="text-sm text-superGray">/month</span>
                                 </div>
                             </div>
                             <div class="">
                                 <div class="">
                                     <span class="font-bold text-4xl">$288</span>
-                                    <span class="text-sm text-[#96999D]">/year</span>
+                                    <span class="text-sm text-superGray">/year</span>
                                 </div>
                             </div>
-                            <button class="my-4 border border-[#FF2D3D] text-[#FF2D3D] py-2 px-6 w-full rounded-xl hover:bg-[#FF2D3D] hover:text-white">Buy plan</button>
-                            <ul class="text-[#96999D] my-4">
-                                <li class="before:content-[url(/src/assets/vector-img.svg)] before:mr-2 my-2">25 products</li>
-                                <li class="before:content-[url(/src/assets/vector-img.svg)] before:mr-2 my-2">Up to 10,000 subscribers</li>
-                                <li class="before:content-[url(/src/assets/vector-img.svg)] before:mr-2 my-2">Advanced analytics</li>
-                                <li class="before:content-[url(/src/assets/vector-img.svg)] before:mr-2 my-2">24-hour support response time</li>
-                                <li class="before:content-[url(/src/assets/vector-img.svg)] before:mr-2 my-2">Marketing automations</li>
+                            <button class="my-4 border border-superRed text-superRed py-2 px-6 w-full rounded-xl hover:bg-superRed hover:text-white">Buy plan</button>
+                            <ul class="text-superGray my-4">
+                                <li class="card-list-item">25 products</li>
+                                <li class="card-list-item">Up to 10,000 subscribers</li>
+                                <li class="card-list-item">Advanced analytics</li>
+                                <li class="card-list-item">24-hour support response time</li>
+                                <li class="card-list-item">Marketing automations</li>
                             </ul>
                         </div>
-                        <div class="border border-zinc-900 py-6 px-8 rounded-2xl min-w-[320px] hover:border-[#FF2D3D]">
-                            <h4 class="font-semibold text-lg hover:text-[#FF2D3D]">Freelancer</h4>
-                            <p class="text-sm text-[#96999D]">The essentials to provide your best work for clients.</p>
+                        <div class="border dark:border-white border-zinc-900 py-6 px-8 rounded-2xl min-w-[320px] hover:border-superRed">
+                            <h4 class="font-semibold text-lg hover:text-superRed">Freelancer</h4>
+                            <p class="text-sm text-superGray">The essentials to provide your best work for clients.</p>
                             <div class="my-3 flex justify-between items-center">
                                 <div class="">
                                     <span class="font-bold text-4xl">$30</span>
-                                    <span class="text-sm text-[#96999D]">/month</span>
+                                    <span class="text-sm text-superGray">/month</span>
                                 </div>
                             </div>
                             <div class="">
                                 <div class="">
                                     <span class="font-bold text-4xl">$576</span>
-                                    <span class="text-sm text-[#96999D]">/year</span>
+                                    <span class="text-sm text-superGray">/year</span>
                                 </div>
                             </div>
-                            <button class="my-4 border border-[#FF2D3D] text-[#FF2D3D] py-2 px-6 w-full rounded-xl hover:bg-[#FF2D3D] hover:text-white">Buy plan</button>
-                            <ul class="text-[#96999D] my-4">
-                                <li class="before:content-[url(/src/assets/vector-img.svg)] before:mr-2 my-2">Unlimited products</li>
-                                <li class="before:content-[url(/src/assets/vector-img.svg)] before:mr-2 my-2">Unlimited subscribers</li>
-                                <li class="before:content-[url(/src/assets/vector-img.svg)] before:mr-2 my-2">Advanced analytics</li>
-                                <li class="before:content-[url(/src/assets/vector-img.svg)] before:mr-2 my-2">1-hour, dedicated support response time</li>
-                                <li class="before:content-[url(/src/assets/vector-img.svg)] before:mr-2 my-2">Marketing automations</li>
-                                <li class="before:content-[url(/src/assets/vector-img.svg)] before:mr-2 my-2">Custom reporting tools</li>
+                            <button class="my-4 border border-superRed text-superRed py-2 px-6 w-full rounded-xl hover:bg-superRed hover:text-white">Buy plan</button>
+                            <ul class="text-superGray my-4">
+                                <li class="card-list-item">Unlimited products</li>
+                                <li class="card-list-item">Unlimited subscribers</li>
+                                <li class="card-list-item">Advanced analytics</li>
+                                <li class="card-list-item">1-hour, dedicated support response time</li>
+                                <li class="card-list-item">Marketing automations</li>
+                                <li class="card-list-item">Custom reporting tools</li>
                             </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Grid -->
+            <div class="py-10 container mx-auto px-4">
+                <h2 class="font-medium text-4xl">Grid</h2>
+                <div class="my-4 flex flex-col md:grid md:grid-cols-2 xl:grid-cols-3 gap-2">
+                    <!-- Карточка -->
+                    <div class="border-2 dark:border-white border-slate-500 rounded-3xl py-4 px-6">
+                        <span class="font-medium text-slate-500 text-lg">Доклад</span>
+                        <h4 class="font-bold text-2xl mb-4 mt-2">Lorem Ipsum is simply dummy text of the typesetting industry.</h4>
+                        <div class="flex gap-4 items-center my-4">
+                            <img src="/src/assets/avatar-img.png" class="w-12 h-12 object-cover rounded-full">
+                            <span class="text-xl">Igor Radimov</span>
+                            <span class="uppercase text-slate-500">Lorem Ipsum</span>
+                        </div>
+                        <div class="my-4 flex flex-wrap gap-2">
+                            <div class="font-medium text-lg flex items-center gap-2 border-2">
+                                <span>ML</span>
+                                <img class="dark:invert" src="/src/assets/right-arrow-img.png" alt="">
+                            </div>
+                            <div class="font-medium text-lg flex items-center gap-2 border-2">
+                                <span>Devops</span>
+                                <img class="dark:invert" src="/src/assets/right-arrow-img.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Красная карточка -->
+                    <div class="rounded-3xl overflow-hidden col-span-1 xl:col-span-2 relative hidden md:block">
+                        <img src="/src/assets/red-img.png" alt="Red card" class="absolute top-0 left-0 min-w-full min-h-full object-cover">
+                    </div>
+                    <!-- Карточка -->
+                    <div class="border-2 dark:border-white border-slate-500 rounded-3xl py-4 px-6">
+                        <span class="font-medium dark:text-white text-slate-500 text-lg">Доклад</span>
+                        <h4 class="font-bold text-2xl mb-4 mt-2">Lorem Ipsum is simply dummy text of the typesetting industry.</h4>
+                        <div class="flex gap-4 items-center my-4">
+                            <img src="/src/assets/avatar-img.png" class="w-12 h-12 object-cover rounded-full">
+                            <span class="text-xl">Igor Radimov</span>
+                            <span class="uppercase text-slate-500">Lorem Ipsum</span>
+                        </div>
+                        <div class="my-4 flex flex-wrap gap-2">
+                            <div class="font-medium text-lg flex items-center gap-2 border-2">
+                                <span>ML</span>
+                                <img class="dark:invert" src="/src/assets/right-arrow-img.png" alt="">
+                            </div>
+                            <div class="font-medium text-lg flex items-center gap-2 border-2">
+                                <span>Devops</span>
+                                <img class="dark:invert" src="/src/assets/right-arrow-img.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Карточка -->
+                    <div class="border-2 dark:border-white border-slate-500 rounded-3xl py-4 px-6">
+                        <span class="font-medium text-slate-500 text-lg">Доклад</span>
+                        <h4 class="font-bold text-2xl mb-4 mt-2">Lorem Ipsum is simply dummy text of the typesetting industry.</h4>
+                        <div class="flex gap-4 items-center my-4">
+                            <img src="/src/assets/avatar-img.png" class="w-12 h-12 object-cover rounded-full">
+                            <span class="text-xl">Igor Radimov</span>
+                            <span class="uppercase text-slate-500">Lorem Ipsum</span>
+                        </div>
+                        <div class="my-4 flex flex-wrap gap-2">
+                            <div class="font-medium text-lg flex items-center gap-2 border-2">
+                                <span>ML</span>
+                                <img class="dark:invert" src="/src/assets/right-arrow-img.png" alt="">
+                            </div>
+                            <div class="font-medium text-lg flex items-center gap-2 border-2">
+                                <span>Devops</span>
+                                <img class="dark:invert" src="/src/assets/right-arrow-img.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Карточка -->
+                    <div class="border-2 dark:border-white border-slate-500 rounded-3xl py-4 px-6">
+                        <span class="font-medium text-slate-500 text-lg">Доклад</span>
+                        <h4 class="font-bold text-2xl mb-4 mt-2">Lorem Ipsum is simply dummy text of the typesetting industry.</h4>
+                        <div class="flex gap-4 items-center my-4">
+                            <img src="/src/assets/avatar-img.png" class="w-12 h-12 object-cover rounded-full">
+                            <span class="text-xl">Igor Radimov</span>
+                            <span class="uppercase text-slate-500">Lorem Ipsum</span>
+                        </div>
+                        <div class="my-4 flex flex-wrap gap-2">
+                            <div class="font-medium text-lg flex items-center gap-2 border-2">
+                                <span>ML</span>
+                                <img class="dark:invert" src="/src/assets/right-arrow-img.png" alt="">
+                            </div>
+                            <div class="font-medium text-lg flex items-center gap-2 border-2">
+                                <span>Devops</span>
+                                <img class="dark:invert" src="/src/assets/right-arrow-img.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Красная карточка-->
+                    <div class="rounded-3xl overflow-hidden row-span-2 relative hidden md:block">
+                        <img src="/src/assets/red-img.png" alt="Red card" class="absolute top-0 left-0 min-w-full min-h-full object-cover">
+                    </div>
+                    <!-- Карточка -->
+                    <div class="border-2 dark:border-white border-slate-500 rounded-3xl py-4 px-6">
+                        <span class="font-medium text-slate-500 text-lg">Доклад</span>
+                        <h4 class="font-bold text-2xl mb-4 mt-2">Lorem Ipsum is simply dummy text of the typesetting industry.</h4>
+                        <div class="flex gap-4 items-center my-4">
+                            <img src="/src/assets/avatar-img.png" class="w-12 h-12 object-cover rounded-full">
+                            <span class="text-xl">Igor Radimov</span>
+                            <span class="uppercase text-slate-500">Lorem Ipsum</span>
+                        </div>
+                        <div class="my-4 flex flex-wrap gap-2">
+                            <div class="font-medium text-lg flex items-center gap-2 border-2">
+                                <span>ML</span>
+                                <img class="dark:invert" class="dark:invert" src="/src/assets/right-arrow-img.png" alt="">
+                            </div>
+                            <div class="font-medium text-lg flex items-center gap-2 border-2">
+                                <span>Devops</span>
+                                <img class="dark:invert" class="dark:invert" src="/src/assets/right-arrow-img.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Карточка -->
+                    <div class="border-2 dark:border-white border-slate-500 rounded-3xl py-4 px-6">
+                        <span class="font-medium text-slate-500 text-lg">Доклад</span>
+                        <h4 class="font-bold text-2xl mb-4 mt-2">Lorem Ipsum is simply dummy text of the typesetting industry.</h4>
+                        <div class="flex gap-4 items-center my-4">
+                            <img src="/src/assets/avatar-img.png" class="w-12 h-12 object-cover rounded-full">
+                            <span class="text-xl">Igor Radimov</span>
+                            <span class="uppercase text-slate-500">Lorem Ipsum</span>
+                        </div>
+                        <div class="my-4 flex flex-wrap gap-2">
+                            <div class="font-medium text-lg flex items-center gap-2 border-2">
+                                <span>ML</span>
+                                <img class="dark:invert" src="/src/assets/right-arrow-img.png" alt="">
+                            </div>
+                            <div class="font-medium text-lg flex items-center gap-2 border-2">
+                                <span>Devops</span>
+                                <img class="dark:invert" src="/src/assets/right-arrow-img.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Карточка -->
+                    <div class="border-2 dark:border-white border-slate-500 rounded-3xl py-4 px-6">
+                        <span class="font-medium text-slate-500 text-lg">Доклад</span>
+                        <h4 class="font-bold text-2xl mb-4 mt-2">Lorem Ipsum is simply dummy text of the typesetting industry.</h4>
+                        <div class="flex gap-4 items-center my-4">
+                            <img src="/src/assets/avatar-img.png" class="w-12 h-12 object-cover rounded-full">
+                            <span class="text-xl">Igor Radimov</span>
+                            <span class="uppercase text-slate-500">Lorem Ipsum</span>
+                        </div>
+                        <div class="my-4 flex flex-wrap gap-2">
+                            <div class="font-medium text-lg flex items-center gap-2 border-2">
+                                <span>ML</span>
+                                <img class="dark:invert" src="/src/assets/right-arrow-img.png" alt="">
+                            </div>
+                            <div class="font-medium text-lg flex items-center gap-2 border-2">
+                                <span>Devops</span>
+                                <img class="dark:invert" src="/src/assets/right-arrow-img.png" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
